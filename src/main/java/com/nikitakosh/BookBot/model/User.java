@@ -20,7 +20,7 @@ public class User {
     private Long id;
     @Column(name = "chat_id")
     private Long chatId;
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER )
     @JoinTable(name = "user_book",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "book_id"))
